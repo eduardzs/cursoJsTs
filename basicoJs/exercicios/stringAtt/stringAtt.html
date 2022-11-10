@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Sobre String's</title>
+</head>
+<body>
+    <script>
+        /* 
+            Neste exercício foi proposto que o usuário digitasse o seu nome completo e através do valor digitado
+            exibiríamos algumas informações.
+        */
+        const nome = prompt('Informe Seu Nome Completo: ') // Variável
+        document.body.innerHTML += `Seu Nome é: <strong>${nome}</strong> </br>` // Exibe o valor da variável
+        document.body.innerHTML += `Seu Nome Têm ${nome.replace(/ /g, '').length} Letras </br>` // Exibe o tamanho da variável
+        document.body.innerHTML += `A Segunda Letra do Seu Nome é: ${nome[1]} </br>` // Exibe a letra do determinado índice
+        document.body.innerHTML += `Primeiro Índice da Letra "a" No Seu Nome: ${nome.indexOf('a')}</br>` // Exibe o índice da primeira letra "a"
+        document.body.innerHTML += `Ultimo Índice da Letra "a" No Seu Nome: ${nome.lastIndexOf('a')}</br>` // Exibe o índice da última letra "a"
+        document.body.innerHTML += `As últimas 3 Letras do Seu Nome São: ${nome.slice(-3)}</br>` // Exibe apenas ás letras de determinado índice
+        document.body.innerHTML += `As Palavras do Seu Nome São: ${nome.split(' ')} </br>` // Exibe um Array das string's, separando nós espaços
+        document.body.innerHTML += `Seu Nome Com Letras Maiúscula: ${nome.toUpperCase()} </br>` // Deixa às letras maiúsculas
+        document.body.innerHTML += `Seu Nome Com Letras Minusculas: ${nome.toLowerCase()} </br>`// Deixa às letras minusculas
+    </script>
+</body>
+</html>
