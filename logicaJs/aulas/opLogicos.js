@@ -1,9 +1,9 @@
 /* 
     <==Operadores Lógicos==>
 
-    • && -> and -> e
-    • || -> or -> ou
-    • ! -> not -> não
+    • && -> and -> e (True e True)
+    • || -> or -> ou (True ou False)
+    • ! -> not -> não (True Vira False ou False Vira True)
 */
 
 console.log(10 === 10 && 11 === 11) // Ambas devem retornar true, para que a saída seja true
